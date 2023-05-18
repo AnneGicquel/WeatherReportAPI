@@ -1,0 +1,83 @@
+/* VARIABLES */
+:root {
+    --red: #ed4441;
+    --white: #ffffff;
+    --black: #000000;
+    --roboto: 'Roboto', sans-serif;
+    --lighterFont: lighter;
+    --uppercase: uppercase;
+}
+
+
+/* CONTAINER */
+#weatherFormAndReportContainer {
+    background-color: var(--black);
+    height: 100px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* FORM */
+label {
+    color: var(--white);
+    text-transform: var(--uppercase);
+    font-family: var(--roboto);
+    font-weight: var(--lighterFont)
+}
+
+input[type="text"] {
+    background-color: var(--black);
+    border: none;
+    border-bottom: 0.5px solid var(--white);
+    text-transform: var(--uppercase);
+    font-family: var(--roboto);
+    font-weight: var(--lighterFont);
+    outline: none;
+    color: yellow;
+    text-align: center;
+    font-size: 16px;
+    width: 270px;
+}
+
+button {
+    background-color: var(--red);
+    letter-spacing: 4px;
+    border: none;
+    color: var(--white);
+    text-transform: var(--uppercase);
+    font-family: var(--roboto);
+    font-weight: normal;
+    width: 150px;
+    padding: 6px 20px;
+    border: solid 2px var(--red);
+
+}
+
+
+/* REPORT */
+.report {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: auto;
+    color: var(--white);
+    font-weight: var(--lighterFont);
+    text-transform: var(--uppercase);
+    font-family: var(--roboto);
+    margin-top: 10px;
+}
+
+#img {
+    height: 26px;
+}
+
+
+/* FORM & REPORT */
+.formAndReport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

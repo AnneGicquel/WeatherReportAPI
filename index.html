@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather report API</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
+  <script src="callApiMeteo.js" defer></script>
+</head>
+
+<body>
+  <article id="weatherFormAndReportContainer">
+    <div class="formAndReport">
+      <form>
+        <label>Maximize the sunny days I'll generate for you by sharing your city here:</label>
+        <input id="inputByUser" type="text" />
+        <button type='button' onclick="getValue()">Enjoy ☀️ !</button>
+      </form>
+      <div class="report">
+        <p id="cityName"></p>
+        <img id="img" />
+        <p id="tmp"></p>
+      </div>
+    </div>
+  </article>
+</body>
+
+</html>
